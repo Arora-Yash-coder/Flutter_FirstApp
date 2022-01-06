@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/myWidget.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,7 +23,7 @@ class Home extends StatelessWidget {
         title: Text('Custom Widgets'),
       ),
       body: Center(
-        child: Text('Home'),
+        child: myCoolWidget(),
       ),
     );
   }
