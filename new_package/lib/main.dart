@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
+// import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,6 +22,15 @@ void fetchJson() async {
   print(convert.jsonDecode(response.body));
 }
 
+// void launchUrl() async {
+//   var url = "https://www.google.com/";
+//   if (await canLaunch(url) != null) {
+//     await launch(url);
+//   } else {
+//     throw 'could not launch';
+//   }
+// }
+
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -34,6 +44,14 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('Packages'),
+        ),
+        body: const Center(
+            // child: RaisedButton(
+            //   onPressed: launchUrl,
+            // ),
+            ));
   }
 }
