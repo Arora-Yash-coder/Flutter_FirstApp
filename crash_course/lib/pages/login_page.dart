@@ -6,13 +6,16 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
+      color: Colors.white,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(
             "assets/images/login.png",
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
+          ),
+          Text(
+            "Welcome",
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
           )
         ],
       ),
