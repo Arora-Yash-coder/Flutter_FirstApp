@@ -1,2 +1,2 @@
 # Flutter_FirstApp
-A Collection of my all practise apps.
+A Collection of my all practise/unfinished apps.
